@@ -64,8 +64,25 @@ body {
 
   &__list {
     margin-top: 80px;
-    padding: 20px;
+    padding: 30px;
     border: 2px dashed rgb(240, 229, 85);
-    width: 40%;
+    width: 60%;
+    line-height: 34px;
+
+    & li {
+      list-style: none;
+
+      & a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        transition: font-size .2s;
+
+        &:hover {
+          font-size: 21px;
+        }
+      }
+    }
   }
 }

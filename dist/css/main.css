@@ -379,8 +379,21 @@ body {
       font-size: 24px; }
   .main__list {
     margin-top: 80px;
-    padding: 20px;
+    padding: 30px;
     border: 2px dashed #f0e555;
-    width: 40%; }
+    width: 60%;
+    line-height: 34px; }
+    .main__list li {
+      list-style: none; }
+      .main__list li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        -webkit-transition: font-size .2s;
+        -o-transition: font-size .2s;
+        transition: font-size .2s; }
+        .main__list li a:hover {
+          font-size: 21px; }
 
 /*# sourceMappingURL=main.css.map */
