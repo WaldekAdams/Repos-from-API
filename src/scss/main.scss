@@ -6,11 +6,66 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  background-color: rgb(209, 186, 155);
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vh;
+  margin: 30px auto;
+
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 15vh;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    color: rgb(15, 14, 14);
+    font-size: 38px;
+    text-transform: uppercase;
+    background-color: rgb(199, 120, 64);
+    box-shadow: 0 0 3px 3px bisque;
+    border-radius: 4px;
+  }
+
+  &__take {
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 22px;
+    font-weight: bold;
+    border: 1px solid rgb(37, 37, 37);
+    box-shadow: none;
+    background-color: darkkhaki;
+    transition: background .2s, font-size .3s;
+
+    &:hover {
+      background-color: rgb(153, 148, 71);
+      font-size: 24px;
+    }
+  }
+
+  &__list {
+    margin-top: 80px;
+    padding: 20px;
+    border: 2px dashed rgb(240, 229, 85);
+    width: 40%;
+  }
 }

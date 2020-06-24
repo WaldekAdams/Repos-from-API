@@ -311,12 +311,76 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
 body {
-  color: #F9C802;
-  background: #000; }
+  background-color: #d1ba9b;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80vh;
+  margin: 30px auto; }
+  .main__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    height: 15vh;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    color: #0f0e0e;
+    font-size: 38px;
+    text-transform: uppercase;
+    background-color: #c77840;
+    -webkit-box-shadow: 0 0 3px 3px bisque;
+            box-shadow: 0 0 3px 3px bisque;
+    border-radius: 4px; }
+  .main__take {
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 22px;
+    font-weight: bold;
+    border: 1px solid #252525;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: darkkhaki;
+    -webkit-transition: background .2s, font-size .3s;
+    -o-transition: background .2s, font-size .3s;
+    transition: background .2s, font-size .3s; }
+    .main__take:hover {
+      background-color: #999447;
+      font-size: 24px; }
+  .main__list {
+    margin-top: 80px;
+    padding: 20px;
+    border: 2px dashed #f0e555;
+    width: 40%; }
 
 /*# sourceMappingURL=main.css.map */
